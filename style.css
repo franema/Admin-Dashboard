@@ -31,6 +31,7 @@ header input {
     justify-self: flex-start;
     min-width: 35vw;
     background-color: rgb(216, 226, 226);
+    padding: 0.06vw 0.3vw;
 }
 
 header label {
