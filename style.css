@@ -200,6 +200,8 @@ nav>button:hover {
     border-radius: 6px;
     padding: 1vw;
     display: grid;
+    margin: 1vw 0;
+
 }
 
 .trending-container>div {
