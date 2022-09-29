@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+}
+
+
+.board-container {
+    display: grid;
+    grid-template: 1fr / 0.5fr 4fr;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: grid;
+    grid-template: 1fr/ 0.5fr 15fr repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 1vw 2vw;
+}
+
+header input {
+    border-radius: 8px;
+    justify-self: flex-start;
+    min-width: 35vw;
+}
+
+header label {
+   display: grid;
+   align-items: center;
+}
+
+.iconx24, .iconx36 {
+    border: 1px solid yellow;
+    border-radius: 20px;
+    padding: 0.2vw;
+    background-color: yellow;
+}
+
+aside {
+    background-color: rgb(82, 106, 211);
+    color: rgb(255, 255, 255);
+    padding: 1vw;
+}
+
+.page-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.aside-bar {
+    margin-top: 3vw;
+    margin-left: 1vw;
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr;
+    gap: 2vw;
+
+}
+
+.aside-bar>div {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.options {
+    margin: 4vw 0 0 1vw;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    gap: 2vw;
+}
+
+.options>div {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 1vw;
+    padding: 1vw 2vw;
+    align-items: center;
+}
+
+nav div:nth-child(2) {
+    flex: 1;
+}
+
+nav button {
+    background-color: rgb(82, 106, 211);
+    color: white;
+    border-radius: 16px;
+    border: 0;
+    font-size: 0.8rem;
+    padding: 0.5vw 2vw;
+    cursor: pointer;
+}
+
+.container {
+    background-color: rgb(190, 190, 190);
+    display: flex;
+}
+
+.projects {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container {
+    flex: 1;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 1vw;
+    margin: 1vw 0;
+}
+
+.projects-container>div {
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding: 2vw;
+    border-left: 6px solid orange;
+    display: grid;
+    grid-template: 1fr 3fr 1fr / 1fr;
+    transition: all 0.5s;
+}
+
+.projects-container>div:hover {
+    background-color: rgb(216, 226, 226);
+    transform: scale(1.01);
+}
+
+
+.projects-container>div>div {
+    justify-self: flex-end;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.side-bar {
+    padding: 1vw 1vw 1vw 0;
+}
+
+.announcements-container {
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding: 1vw;
+    margin: 1vw 0;
+}
+
+.announcements-container div:nth-child(-n+2) {
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+.announcements-container div {
+    padding: 1vw;
+}
+
+.trending-container {
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding: 1vw;
+    margin: 1vw 0;
+}
